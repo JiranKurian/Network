@@ -29,7 +29,7 @@ namespace NetworkAdmin
                     if ((networkInterface.OperationalStatus == OperationalStatus.Up && networkInterface.Name == "Wi-Fi") || (networkInterface.OperationalStatus == OperationalStatus.Up && networkInterface.Name == "Ethernet"))
                     {
                         int count = -1;
-                        foreach (char charactor in networkInterface.GetPhysicalAddress().ToString())
+                        foreach (char character in networkInterface.GetPhysicalAddress().ToString())
                         {
                             count++;
                             if (count == 2)
@@ -37,7 +37,7 @@ namespace NetworkAdmin
                                 count = 0;
                                 macAddresses += ":";
                             }
-                            macAddresses += charactor;
+                            macAddresses += character;
                         }
                         break;
                     }
