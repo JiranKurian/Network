@@ -12,12 +12,14 @@ namespace NetworkAdmin
             {
                 string gatewayIP = IPFinder.GetGatewayIP();
                 Console.WriteLine(gatewayIP);
-                PingManager.PingAll(5, 10000, "somedata", gatewayIP);
+                PingManager.PingAll(1, 4000, "somedata", gatewayIP);
             }
             else
             {
                 Console.WriteLine("NetworkInterface unavailable");
             }
+
+            Console.ReadKey();
         }
     }
 }
