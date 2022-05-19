@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using System.Net.NetworkInformation;
 
 namespace NetworkAdmin
 {
@@ -17,9 +18,32 @@ namespace NetworkAdmin
             string[] output = process.StandardOutput.ReadToEnd().Split('-');
             if (output.Length >= 6)
             {
-                return output[3].Substring(Math.Max(0, output[3].Length - 2)) + "-" + output[4] + "-" + output[5] + "-" + output[6] + "-" + output[7] + "-" + output[8].Substring(0, 2);
+                return (output[3].Substring(Math.Max(0, output[3].Length - 2)) + ":" + output[4] + ":" + output[5] + ":" + output[6] + ":" + output[7] + ":" + output[8].Substring(0, 2)).ToUpper();
             }
-            return string.Empty;
+            else
+            {
+                string macAddresses = string.Empty;
+
+                foreach (NetworkInterface networkInterface in NetworkInterface.GetAllNetworkInterfaces())
+                {
+                    if ((networkInterface.OperationalStatus == OperationalStatus.Up && networkInterface.Name == "Wi-Fi") || (networkInterface.OperationalStatus == OperationalStatus.Up && networkInterface.Name == "Ethernet"))
+                    {
+                        int count = -1;
+                        foreach (char charactor in networkInterface.GetPhysicalAddress().ToString())
+                        {
+                            count++;
+                            if (count == 2)
+                            {
+                                count = 0;
+                                macAddresses += ":";
+                            }
+                            macAddresses += charactor;
+                        }
+                        break;
+                    }
+                }
+                return macAddresses;
+            }
         }
     }
 }
