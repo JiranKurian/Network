@@ -26,7 +26,7 @@ namespace NetworkAdmin
 
                 foreach (NetworkInterface networkInterface in NetworkInterface.GetAllNetworkInterfaces())
                 {
-                    if ((networkInterface.OperationalStatus == OperationalStatus.Up && networkInterface.Name == "Wi-Fi") || (networkInterface.OperationalStatus == OperationalStatus.Up && networkInterface.Name == "Ethernet"))
+                    if ((networkInterface.OperationalStatus == OperationalStatus.Up && networkInterface.Name == "Ethernet") || (networkInterface.OperationalStatus == OperationalStatus.Up && networkInterface.Name == "Wi-Fi"))
                     {
                         int count = -1;
                         foreach (char character in networkInterface.GetPhysicalAddress().ToString())
