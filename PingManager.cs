@@ -43,7 +43,7 @@ namespace NetworkAdmin
 
             if (e.Reply != null && e.Reply.Status == IPStatus.Success)
             {
-                Console.WriteLine($"IP Address: {ip} -- MAC: {MACFinder.GetMACAddress(ip)} -- Host Name: {HostFinder.GetHostAddress(ip)}");
+                Console.WriteLine($"IP Address: {ip} -- MAC: {MACFinder.GetMACAddress(ip)}");
             }
         }
     }
