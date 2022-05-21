@@ -40,10 +40,9 @@ namespace Network
 
         private static void PingCompleted(object sender, PingCompletedEventArgs e)
         {
-            string ip = (string)e.UserState;
-
             if (e.Reply != null && e.Reply.Status == IPStatus.Success)
             {
+                string ip = (string)e.UserState;
                 Console.WriteLine($"IP Address: {ip} -- MAC: {MACFinder.GetMACAddress(ip)}");
             }
         }
