@@ -2,7 +2,7 @@
 using System.Net;
 using System.Net.NetworkInformation;
 
-namespace NetworkAdmin
+namespace Network
 {
     public class Admin
     {

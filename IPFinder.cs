@@ -1,7 +1,7 @@
 using System;
 using System.Net.NetworkInformation;
 
-namespace NetworkAdmin
+namespace Network
 {
     public static class IPFinder
     {

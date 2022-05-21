@@ -1,6 +1,6 @@
 using System;
 
-namespace NetworkAdmin
+namespace Network
 {
     public static class RandomGenerator
     {

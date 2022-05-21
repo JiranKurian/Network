@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Net.NetworkInformation;
 
-namespace NetworkAdmin
+namespace Network
 {
     public static class MACFinder
     {
