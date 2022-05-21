@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LcwNmU+y4AkzeeFH7TgvxuE4uzDSPCAWvmrsN84MAHmr/b3PnxPMAF4bEQnTBAeYaadQzxq88fe1KzNj95m3AQ==",
+  "dgSpecHash": "KE6jaA57wmg+mE5WaL4s77MtHgzXE3HbVhElIPD7znlIMLXiB3U7ccm3txxNxcThSf0VyQh48AH07b+kLKn8Ug==",
   "success": true,
-  "projectFilePath": "F:\\Projects\\GitHub\\NetworkAdmin\\NetworkAdmin.csproj",
+  "projectFilePath": "F:\\Projects\\GitHub\\Network\\Network.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

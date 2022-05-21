@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\GitHub\\NetworkAdmin\\NetworkAdmin.csproj": {}
+    "F:\\Projects\\GitHub\\Network\\Network.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\GitHub\\NetworkAdmin\\NetworkAdmin.csproj": {
+    "F:\\Projects\\GitHub\\Network\\Network.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\GitHub\\NetworkAdmin\\NetworkAdmin.csproj",
-        "projectName": "NetworkAdmin",
-        "projectPath": "F:\\Projects\\GitHub\\NetworkAdmin\\NetworkAdmin.csproj",
+        "projectUniqueName": "F:\\Projects\\GitHub\\Network\\Network.csproj",
+        "projectName": "Network",
+        "projectPath": "F:\\Projects\\GitHub\\Network\\Network.csproj",
         "packagesPath": "C:\\Users\\jiran\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\GitHub\\NetworkAdmin\\obj\\",
+        "outputPath": "F:\\Projects\\GitHub\\Network\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual Studio\\Shared\\NuGetPackages"

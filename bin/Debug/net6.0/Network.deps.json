@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "NetworkAdmin/1.0.0": {
+      "Network/1.0.0": {
         "runtime": {
-          "NetworkAdmin.dll": {}
+          "Network.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "NetworkAdmin/1.0.0": {
+    "Network/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
