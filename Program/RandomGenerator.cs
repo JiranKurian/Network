@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace Network
+namespace Program
 {
     public static class RandomGenerator
     {

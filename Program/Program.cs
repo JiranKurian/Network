@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Net;
 using System.Net.NetworkInformation;
+using Network;
 
-namespace Network
+namespace Program
 {
-    public class Admin
+    public class Program
     {
         public static void Main(string[] args)
         {
